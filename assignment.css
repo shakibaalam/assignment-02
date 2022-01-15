@@ -172,6 +172,10 @@ nav a{
 .center{
     text-align: center;
 }
+.footer-style h2, p{
+    margin-bottom: 15px;
+
+}
 .footer-style a{
     font-size: 30px;
     color: white;
@@ -250,7 +254,57 @@ nav a{
         grid-template-columns: repeat(1);
         
     }
+}
+@media only screen and (min-width: 689px) and (max-width: 992px){
+         /* common utilities */
 
+    .head, .main, .footer-style{
+        width: 100%;
+    }
+
+    /* head-part */
+
+
+    .top-div>nav>a{
+        display: none;
+    
+    }
+    .right-part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-part img{
+        width: 100%;
+    }
+   
+    .logo-div{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 40px;
+        align-items: center;
+    }
+
+     /* main-part */
+    
+    .collections{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-margin{
+        margin: 0 auto;
+    }
+    
+    .container{
+        align-items: center;
+    }
+    .last-section{
+        margin: 50px 5px;
+    }
+    .gear-img, .service{
+        margin: 20px 20px;
+    }
 }
 
 
